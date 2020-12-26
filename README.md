@@ -9,15 +9,19 @@ App to post blogs
 The first thing to do is to clone the repository:
 
 ```sh
-$ git clone https://github.com/gocardless/sample-django-app.git
-$ cd sample-django-app
+$ git clone https://github.com/humphrey-mutuma/Blog.git
+$ cd Blog
 ```
 
-Create a virtual environment to install dependencies in and activate it:
+Create a virtual environment to install dependencies and activate it:
 
 ```sh
-$ virtualenv --no-site-packages virtual
+$ python3 -m venv --without-pip virtual
 $ source virtual/bin/activate
+```
+Then install the PIP:
+```sh
+(virtual)$ curl https://bootstrap.pypa.io/get-pip.py | python
 ```
 
 Then install the dependencies:
@@ -26,11 +30,11 @@ Then install the dependencies:
 (env)$ pip install -r requirements.txt
 ```
 Note the `(virtual)` in front of the prompt. This indicates that this terminal
-session operates in a virtual environment set up by `virtualenv`.
+session operates in a virtual environment set up by `venv`.
 
 Once `pip` has finished downloading the dependencies:
 ```sh
-(virtual)$ cd project
+(virtual)$ cd Blog
 (virtual)$ python manage.py runserver
 ```
 
@@ -70,8 +74,7 @@ This project supports Ubuntu Linux 14.04 and Mac OS X Yosemite. It is not tested
 
 |Given | When | Then|
 |------|-----------|-------|
-
-|-------------| --------------|--------------|
+|...................| |................... | ...................|
 
 
 Want to contribute? Great!
