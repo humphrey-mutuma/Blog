@@ -70,8 +70,8 @@ This project supports Ubuntu Linux 14.04 and Mac OS X Yosemite. It is not tested
 
 |Given | When | Then|
 |------|-----------|-------|
-| | | |
-|User wants to look into an image and its details| The user clicks on the image|A page with an enlarged version of the image with the image details is loaded|
+
+|-------------| --------------|--------------|
 
 
 Want to contribute? Great!
@@ -93,7 +93,7 @@ To fix a bug or enhance an existing module, follow these steps:
 - Create a Pull Request
 
 #### Demo : 
-Here is the link to live demo [Click me]()
+Here is the link to live demo [Click me](https://tribune-blog1.herokuapp.com/)
 
 ## Support and contact details
 Incase of any issues using the site please contact me: [mailto](mailto:humphreymutuma01@gmail.com)
