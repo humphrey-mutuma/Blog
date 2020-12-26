@@ -36,9 +36,9 @@ Once `pip` has finished downloading the dependencies:
 
 ## Deploy to Heroku
 
-You can deploy this app yourself to Heroku to play with.
+You can deploy this app yourself to Heroku to try it out.
 
-[![Deploy](https://www.herokucdn.com)](https://heroku.com)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/)
 
 
 ### Technologies used;
