@@ -1,10 +1,26 @@
 {%extends 'all-news/base.html'%}
+{% load bootstrap3 %}
+<!-- stakeoverflow -->
+{% load static %}
+<!--  -->
 {% block content %} 
 {{ block.super}}
 
 <div class="container">
 
   <!-- Looping through news   -->
+
+  <div class="container-fluid">
+
+    <form  action="{%url 'newsToday'%}" method="post">
+      {%csrf_token%}
+  
+      {% bootstrap_form letterForm layout='inline' %}
+      <input type="submit" value="Subscribe">
+    </form>
+  
+  </div>
+
   {% for news_item in news %}
 
   <div class="row">
@@ -21,11 +37,17 @@
   </div>
 
   {% empty %}
-  <div class="row">
-    <h2 class="text-center">There No News Items</h2>
-  </div>
+    <div class="row">
+      <h2 class="text-center">There No News Items</h2>
+    </div>
   {% endfor %}
+ </div>
+ {% endblock %}
 
-</div>
+<!--Some content up here-->
 
+<!--End of the block content-->
+{% block scripts %} 
+{{block.super}}
+  <script type="text/javascript" src="{%static 'js/newsletter.js'%}"></script>
 {% endblock %}
